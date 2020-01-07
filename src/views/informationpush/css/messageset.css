@@ -1,0 +1,16 @@
+.is-horizontal {
+  display: none;
+}
+.el-scrollbar__wrap{overflow-x: hidden;}
+.el-scrollbar__view{
+  padding: 0 0px 20px 0!important;
+  background:rgba(255,255,255,1);
+  /* box-shadow:0px 0px 25px 0px rgba(63,106,255,0.08); */
+  border-radius:6px;
+}
+.moreContent .el-textarea__inner{
+  height: 140px!important;
+}
+/* .el-select-dropdown__list{
+  padding-bottom: 20px!important;
+} */

@@ -1,0 +1,154 @@
+@import './variables.scss';
+
+@mixin colorBtn($color) {
+  background: $color;
+
+  &:hover {
+    color: $color;
+
+    &:before,
+    &:after {
+      background: $color;
+    }
+  }
+}
+
+.blue-btn {
+  @include colorBtn($blue)
+}
+
+.light-blue-btn {
+  @include colorBtn($light-blue)
+}
+
+.red-btn {
+  @include colorBtn($red)
+}
+
+.pink-btn {
+  @include colorBtn($pink)
+}
+
+.green-btn {
+  @include colorBtn($green)
+}
+
+.tiffany-btn {
+  @include colorBtn($tiffany)
+}
+
+.yellow-btn {
+  @include colorBtn($yellow)
+}
+
+.pan-btn {
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 600ms ease all;
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    background: #fff;
+
+    &:before,
+    &:after {
+      width: 100%;
+      transition: 600ms ease all;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    transition: 400ms ease all;
+  }
+
+  &::after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.custom-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  color: #fff;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#app .el-button-default{
+  color: #3f6aff;
+  border-color: #3f6aff;
+}
+
+#app .el-button--primary{
+  background:linear-gradient(90deg,rgba(109,142,255,1) 0%, rgba(63,106,255,1)100%);
+  box-shadow:0px 3px 8px 0px rgba(63,106,255,0.3);
+  height: 30px;
+  font-size: 14px;
+  padding-top:0;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height: 30px;
+  border: none;
+}
+
+#app .el-button--info{
+  background:#fff;
+  border:1px solid rgba(63,106,255,1);
+  color: #3F6AFF;
+  height: 30px;
+  font-size: 14px;
+  padding-top: 0;
+  font-family: PingFang SC;
+  font-weight: 500;
+  line-height: 30px;
+  // border: none;
+  // border-color: #3f6aff;
+}
+
+#app .btn-prev,#app .btn-next,#app .el-pager li{
+  background: #fff;
+  border: 1px solid  rgba(204,204,204,1);
+  border-radius: 3px;
+  color: rgba(102, 102, 102, 1);
+}
+#app .el-pager li:not(.disabled).active{
+  background: rgba(63, 106, 255, 1);
+  color: #fff;
+}
+
+.login-btn{
+  width:100%;
+  margin-bottom:20px;
+  height: 37px !important;
+  line-height: 37px !important;
+}
+
+#app .btn-disable{
+  pointer-events: none;
+  color: #C9CBD7 !important;
+}

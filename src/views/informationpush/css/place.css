@@ -1,0 +1,45 @@
+.is-horizontal {
+  display: none;
+}
+.el-scrollbar__wrap{overflow-x: hidden;}
+.el-scrollbar__view{
+  /* padding: 0px; */
+  background:rgba(255,255,255,1);
+  box-shadow:0px 0px 25px 0px rgba(63,106,255,0.08);
+  border-radius:6px;
+}
+.box_scroll .el-scrollbar__wrap .el-scrollbar__view{
+  padding: 0px;
+}
+.scroll_box .el-scrollbar__wrap .el-scrollbar__view{
+  padding: 0px;
+}
+.el-select-dropdown__list {
+  padding-bottom: 15px!important;
+}
+/* 弹框时间选择器修改图标 */
+.times .el-input__inner{
+  padding-left: 15px!important;
+  padding-right: 45px;
+}
+.el-input__prefix{
+  position: absolute !important;
+  width: 25px;
+  height: 30px;
+  left: calc(100% - 5px - 25px)!important;
+}
+.times .el-input__suffix{
+  position: absolute !important;
+  left: calc(100% - 5px - 25px - 35px)!important;
+  top: 1px!important;
+}
+.selectes {
+  width: 100%!important;
+}
+.el-dialog__body{
+  padding: 15px 20px!important;
+}
+.scroll_boxa ul {
+  padding-left: 0;
+  padding-right: 20px;
+}
