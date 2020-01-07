@@ -122,7 +122,7 @@ export default {
       thisweekDis : '', // 环
       totalNum: '',// 总数
       usedTotalNum: '',// 已使用
-      restTotalNum: '',// 未使用
+      restTotalNum: '',// 未使用--
       ehcart1: null,
       ehcart2: null,
       ehcart3: null
